@@ -1,0 +1,15 @@
+---
+layout: default
+title: Dossiers
+permalink: /dossiers/
+---
+
+<h1 style="text-align: center">Encore en travaux. Revenez quand ce sera terminé !</h1>
+
+<img style="width: 80%; height: auto; display: block; margin: 10px auto;" src="{{ site.baseurl }}/images/come-on.gif"/>
+
+<div class="posts row">
+	{% for post in site.categories.dossier %}
+		{% include dossier-content.html %}
+	{% endfor %}
+</div>
